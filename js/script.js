@@ -10,8 +10,7 @@ const energieEl = document.getElementById("energie");
 const hongerEl = document.getElementById("honger");
 const bartjeImg = document.getElementById("bartje");
 
-// Alle <button>-elementen ophalen (er worden meerdere knoppen gebruikt)
-// querySelectorAll van W3Schools: https://www.w3schools.com/jsref/met_document_queryselectorall.asp
+// Alle <button> elementen ophalen (er worden meerdere knoppen gebruikt)
 const knoppen = document.querySelectorAll("button");
 x
 
@@ -39,7 +38,7 @@ function toonTijdelijkeAfbeelding(actieSrc, geluid) {
   bartjeImg.src = actieSrc;      // Verander de afbeelding naar de actie
   geluid.play();                 // Speel het bijpassende geluid af
   setTimeout(() => {
-    render();                  // Na 1 seconde: pagina updaten
+    render();                  // Na 1 seconde de pagina updaten
   }, 1000);
 }
 
@@ -60,9 +59,8 @@ knoppen[2].onclick = () => {
   toonTijdelijkeAfbeelding("images/6eten.jpg", etenAudio);
 };
 
-
 // Elke 3 seconden worden hopeloosheid, vermoeidheid en honger verhoogd
-// → setInterval gebruikt zoals beschreven op W3Schools: https://www.w3schools.com/jsref/met_win_setinterval.asp
+// setInterval gebruikt zoals beschreven op W3Schools: https://www.w3schools.com/jsref/met_win_setinterval.asp
 setInterval(() => {
   if (hopeloosheid < 30) hopeloosheid++;
   if (vermoeidheid < 30) vermoeidheid++;
@@ -80,7 +78,7 @@ function render() {
 
   const totaal = hopeloosheid + vermoeidheid + honger;
 
-  // Afbeelding wisselt afhankelijk van afhankelijk van Bartje z'n toestand, De "If Else" leerde we in de slides van Les 1b
+// Afbeelding wisselt afhankelijk van afhankelijk van Bartje z'n toestand, De "If Else" leerde we in de slides van Les 1b
 if (totaal <= 15) {
     bartjeImg.src = "images/2vrolijk.jpg";
 } else if (totaal <= 30) {

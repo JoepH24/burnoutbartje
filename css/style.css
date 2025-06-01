@@ -1,5 +1,5 @@
 body {
-    background-image: url('images/office.jpg');
+    background-image: url('https://joeph24.github.io/burnoutbartje/images/office.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -7,7 +7,6 @@ body {
     color: white;
     text-align: center;
     padding: 40px;
-
     background-color: rgba(0, 0, 0, 0.5); 
     background-blend-mode: darken;
 }
