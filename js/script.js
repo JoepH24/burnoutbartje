@@ -12,7 +12,6 @@ const bartjeImg = document.getElementById("bartje");
 
 // Alle <button> elementen ophalen (er worden meerdere knoppen gebruikt)
 const knoppen = document.querySelectorAll("button");
-x
 
 // Geluidsbestanden ophalen via hun ID's, geleerd van de slides en W3schools
 const koffieAudio = document.getElementById("koffieAudio");
