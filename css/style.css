@@ -1,15 +1,14 @@
-/* css/style.css */
 body {
-    background-image: url("/images/office.jpg"); /* pas dit aan naar jouw bestandsnaam */
+    background-image: url("images/office.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    font-family: 'Playfair Display', serif; /* Standaard font voor de body */
+    font-family: 'Playfair Display', serif; 
     color: white;
     text-align: center;
     padding: 40px;
 
-    /* Semi-transparante laag voor leesbaarheid */
+
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
 }
@@ -22,7 +21,7 @@ html, body {
 
 
 h1 {
-    font-family: 'Press Start 2P', cursive; /* Crazy game font voor h1 */
+    font-family: 'Press Start 2P', cursive; 
     font-size: 3em;
     margin-bottom: 30px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
@@ -38,8 +37,8 @@ h1 {
 p {
     font-size: 1.2em;
     margin: 12px 0;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
-    font-family: 'Bangers', sans-serif; /* Gebruik Bangers voor p tekst */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* W3Schools */
+    font-family: 'Bangers', sans-serif; 
 }
 
 span {
@@ -54,11 +53,11 @@ button {
     padding: 12px 24px;
     margin: 10px;
     font-size: 1.2em;
-    font-family: 'Bangers', sans-serif; /* Gebruik Bangers voor knoppen */
+    font-family: 'Bangers', sans-serif; 
     border-radius: 6px;
-    cursor: pointer;
+    cursor: pointer; /* W3Schools */
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s ease, transform 0.1s ease;
+    transition: background-color 0.3s ease, transform 0.1s ease; /* DLO internetstandaarden blok 1 */
 }
 
 button:hover {

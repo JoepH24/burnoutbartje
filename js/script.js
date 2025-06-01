@@ -81,17 +81,17 @@ function render() {
   const totaal = hopeloosheid + vermoeidheid + honger;
 
   // Afbeelding wisselt afhankelijk van afhankelijk van Bartje z'n toestand, De "If Else" leerde we in de slides van Les 1b
-  if (totaal <= 15) {
+if (totaal <= 15) {
     bartjeImg.src = "images/2vrolijk.jpg";
-  } else if (totaal <= 30) {
+} else if (totaal <= 30) {
     bartjeImg.src = "images/1neutraal.jpg";
-  } else if (totaal <= 45) {
+} else if (totaal <= 45) {
     bartjeImg.src = "images/4booshongerig.jpg";
-  } else if (totaal <= 60) {
+} else if (totaal <= 60) {
     bartjeImg.src = "images/3chagrijnig.jpg";
-  } else {
+} else {
     bartjeImg.src = "images/8kapot.jpg";
-  }
+}
 }
 
 // Mijn afbeeldingen zijn allemaal gegenereerd met Dreamlab, de audio van de knoppen heb ik zelf opgenomen, de muziek heb ik gegenereerd met Udio (dit hebben we geleerd bij Emerging Technologies)
